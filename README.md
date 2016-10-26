@@ -25,4 +25,5 @@ El siguiente proyecto se realiza como una actividad de la clase [Herramientas Co
 ## Integrantes
 
 * [Gisela Arrieta Rivera](https://github.com/Gia37)  
+* [Eilin Luna](https://github.com/eilinluna16)
 * [Yurani Melisa Palacios Palacios](https://github.com/99YuraniPalacios)

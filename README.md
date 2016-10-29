@@ -21,13 +21,13 @@ El siguiente proyecto se realiza como una actividad de la clase [Herramientas Co
 * conda install -c conda-forge selenium   
     
 2.Clonar el repositorio:  
-* git clone https://github.com/Gia37/Baloto.git
+* 'git clone https://github.com/Gia37/Baloto.git'
 
 ## Nota 
 Para mas información sobre el uso de los códigos reelevantes para la construcción del objetivo del proyecto ingrese al siguiente enlace [Documentación](https://github.com/Gia37/Baloto/blob/master/Documentaci%C3%B3n.ipynb)
 
 ## Integrantes
 
-* [Gisela Arrieta Rivera](https://github.com/Gia37)  
-* [Eilin Paola Luna Moreno](https://github.com/eilinluna16)
-* [Yurani Melisa Palacios Palacios](https://github.com/99YuraniPalacios)
+* [Gisela Arrieta Rivera](https://github.com/Gia37 "Cuenta de GitHub Gisela Arrieta")  
+* [Eilin Paola Luna Moreno](https://github.com/eilinluna16 "Cuenta de GitHub Eilin Luna")
+* [Yurani Melisa Palacios Palacios](https://github.com/99YuraniPalacios "Cuenta de GitHub Yurani Palacios")

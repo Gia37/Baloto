@@ -1,9 +1,3 @@
-"""
-Este archivo descarga los datos y para ello al ejecutarse abre una ventana
-en Firefox que es de donde se extraen dichos datos, y ejecuta las opciones
-de cada año
-"""
-
 from selenium import webdriver
 import bs4
 
@@ -47,11 +41,14 @@ for i in range(len(Serie)):
 g.close()
 
 # SE ESCRIBEN NUMEROS DE SORTEO EN ARCHIVO SH: 
+f=open("Datos.sh","w")
 for i in range(len(Num1)):
     Num1[i] = Num1[i].split(' - ')
     Num2[i] = Num2[i].split(' - ')
-f=open("Datos.sh","w") 
+while ["00", "00", "00", "00", "00", "00"] in Num2:
+    Num2.remove(["00", "00", "00", "00", "00", "00"])    
 for i in range(len(Num1)):
     f.write(Num1[i][0]+"\t"+Num1[i][1]+"\t"+Num1[i][2]+"\t"+Num1[i][3]+"\t"+Num1[i][4]+"\t"+Num1[i][5]+"\n")
-    f.write(Num2[i][0]+"\t"+Num2[i][1]+"\t"+Num2[i][2]+"\t"+Num2[i][3]+"\t"+Num2[i][4]+"\t"+Num2[i][5]+"\n")
+for i in range(len(Num2)):    
+    f.write(Num2[i][0]+"\t"+Num2[i][1]+"\t"+Num2[i][2]+"\t"+Num2[i][3]+"\t"+Num2[i][4]+"\t"+Num2[i][5]+"\n")   
 f.close()

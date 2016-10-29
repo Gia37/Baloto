@@ -1,6 +1,6 @@
 # Proyecto de Aula 
 
-El siguiente proyecto se realiza como una actividad de la clase [Herramientas Computacionales](https://github.com/cosmoscalibur/herramientas_computacionales) de la carrera **Computación cientifica** de la Universidad de Medellin(UdeM) siguiendo paso a paso las [instrucciones](https://github.com/cosmoscalibur/herramientas_computacionales/tree/master/Proyecto) dadas por el docente [Edward Yesid Villegas](https://github.com/cosmoscalibur)
+El siguiente proyecto se realiza como una actividad de la clase [Herramientas Computacionales](https://github.com/cosmoscalibur/herramientas_computacionales) de la carrera **Computación Científica** de la Universidad de Medellín(UdeM), siguiendo paso a paso las [instrucciones](https://github.com/cosmoscalibur/herramientas_computacionales/tree/master/Proyecto) dadas por el Docente [Edward Yesid Villegas](https://github.com/cosmoscalibur).
 
 ## Baloto
 
@@ -21,7 +21,7 @@ El siguiente proyecto se realiza como una actividad de la clase [Herramientas Co
 * conda install -c conda-forge selenium   
     
 2.Clonar el repositorio:  
-* git clone https://github.com/Gia37/Baloto
+* git clone https://github.com/Gia37/Baloto.git
 
 ## Nota 
 Para mas información sobre el uso de los códigos reelevantes para la construcción del objetivo del proyecto ingrese al siguiente enlace [Documentación](https://github.com/Gia37/Baloto/blob/master/Documentaci%C3%B3n.ipynb)

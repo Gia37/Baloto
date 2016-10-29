@@ -15,13 +15,13 @@ El siguiente proyecto se realiza como una actividad de la clase [Herramientas Co
 
 1.Si desea puede seguir los siguientes pasos de instalación para que el código del proyecto corra con mayor eficacia, seguido de haber instalado "miniconda":  
 
-* conda install jupyter
-* conda install -c r r-essentials
-* conda install -c anaconda beautifulsoup4 requests
-* conda install -c conda-forge selenium   
+* `conda install jupyter`
+* `conda install -c r r-essentials`
+* `conda install -c anaconda beautifulsoup4 requests`
+* `conda install -c conda-forge selenium`   
     
 2.Clonar el repositorio:  
-* 'git clone https://github.com/Gia37/Baloto.git'
+* `git clone https://github.com/Gia37/Baloto.git`
 
 ## Nota 
 Para mas información sobre el uso de los códigos reelevantes para la construcción del objetivo del proyecto ingrese al siguiente enlace [Documentación](https://github.com/Gia37/Baloto/blob/master/Documentaci%C3%B3n.ipynb)

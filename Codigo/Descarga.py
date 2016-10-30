@@ -60,16 +60,3 @@ for i in range(len(Num1)):
 for i in range(len(Num2)):    
     f.write(Num2[i][0]+"\t"+Num2[i][1]+"\t"+Num2[i][2]+"\t"+Num2[i][3]+"\t"+Num2[i][4]+"\t"+Num2[i][5]+"\n")   
 f.close()
-
-h=open("Numero.sh","w") 
-Num = []
-for i in range(len(Num1)):
-    for j in range(6):
-        Num += [Num1[i][j]]
-for i in range(1, 45+1):
-    if i<10:
-        abc = Num.count("0"+str(i))
-    else:
-        abc = Num.count(str(i))
-h.write(str(i)+"\t"+str(abc)+"\n")
-h.close()

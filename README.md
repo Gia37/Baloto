@@ -4,35 +4,30 @@ El siguiente proyecto se realiza como una actividad de la clase [Herramientas Co
 
 ## Baloto
 
-* Usted puede jugar a través de un tarjetón de juego que tiene 5 paneles para 5 apuestas distintas.  
-* Baloto ofrece un acumulado inicial (ACUMULADO MULTIMILLONARIO) de $2.000 millones de pesos, el cual se irá acumulando cada sorteo si no es ganado, hasta poder entregarlo a un nuevo multimillonario.  
+[¿Qué es baloto?](http://www.baloto.com/index.php#node2695.html?qt-navegacion_internas_baloto=0#qt-navegacion_internas_baloto)  
 
 ## Objetivo
 
-* En el Baloto se espera que el comportamiento sea aleatorio y por ende la secuencia de mayor probabilidad no posee una significancia estadística. La idea del proyecto es la verificación de la aleatoriedad.
+* En el Baloto se espera que el comportamiento sea aleatorio y por ende la secuencia de mayor probabilidad no posee una significancia estadística. La idea del proyecto es la verificación de la aleatoriedad o de la ausencia de significancia estadística en cualquier secuencia seleccionada.
 
 ## Instalación
 
-1. Si desea puede seguir los siguientes pasos de instalación para que el código del proyecto corra con mayor eficacia, seguido de haber instalado "miniconda": 
-    + **Instalar miniconda**
-        + Descargar [Miniconda](http://conda.pydata.org/miniconda.html) dependiendo de su equipo.  
-        + Abre la consola o terminal, se ubica en la carpeta en la que guardo la descarga y ejecuta:  
-            + *`bash "nombre del paquete miniconda.sh"`*  
-            
-            Por ejemplo,si usted descargó Miniconda3-latest-Linux-x86_64.sh entonces ejecuta:  
-            + *`bash Miniconda3-latest-Linux-x86_64.sh`*  
-            
-2. Luego procede a la instalación de:  
-    + `conda install jupyter`  
+1. Para la correcta ejecución de los archivos de este repositorio debe previamente tener instalados:
+ * [Miniconda](http://conda.pydata.org/miniconda.html)
+ * [Python](https://www.python.org/)
+ * [R](https://www.r-project.org/)
+ 
+2. Luego procede a la instalación,por medio de la consola,de:  
+    + `conda install jupyter`
     + `conda install -c r r-essentials`    
     + `conda install -c anaconda beautifulsoup4 requests`  
-    + `conda install -c conda-forge selenium`  
+    + `conda install -c conda-forge selenium`
     
 3. Clonar el repositorio:    
     + `git clone https://github.com/Gia37/Baloto.git`
 
 ## Nota 
-Para mas información sobre el uso de los códigos reelevantes para la construcción del objetivo del proyecto ingrese al siguiente enlace [Documentación](https://github.com/Gia37/Baloto/blob/master/Documentaci%C3%B3n.ipynb).
+Para mas información sobre el uso de los códigos relevantes para la construcción del objetivo del proyecto puede visitar la [Documentación](https://github.com/Gia37/Baloto/blob/master/Documentaci%C3%B3n.ipynb).
 
 ## Integrantes
 

@@ -25,20 +25,20 @@ for i in lines:
 m.close()
 
 print "Ingrese 1, 2, 3, o 4 segun el dato que desea consultar"
-print "1. Que sorteo salio en la serie ________"
-print "2. Sorteos que han salido en el ano _________"
-print "3. Sorteos que han salido en la fecha ________"
-print "4. Cuantas veces ha salido el numero ____ "
+print "1. Sorteo que salio en la serie "
+print "2. Sorteos que han salido en el año "
+print "3. Sorteos que han salido en la fecha "
+print "4. Cuántas veces ha salido el número  "
 resp = input()
 
 if resp==1:
-    A =raw_input("Ingrese el numero de serie ")
+    A =raw_input("Ingrese el número de serie ")
     for i in range(2, len(Serie)):
         if int(Serie[i])==int(A):
             print "Sorteo1: "+Sorteo1[i]+"Sorteo2: "+Sorteo2[i]
     print "Proceso Terminado"
 elif resp==2:
-    A =raw_input("Ingrese el ano AAAA (2001 hasta el 2016)")
+    A =raw_input("Ingrese el año AAAA (2001 hasta el 2016)")
     AA = int(A) - 2000
     for i in range(2, len(Fecha)):
         Fecha[i] = Fecha[i].split('/')
@@ -52,10 +52,10 @@ elif resp==3:
             print "Sorteo1: "+Sorteo1[i]+"Sorteo2: "+Sorteo2[i]   
     print "Proceso Terminado"
 elif resp==4:
-    A =raw_input("Ingrese numero de sorteo (1 hasta 45) ")
+    A =raw_input("Ingrese número de sorteo (1 hasta 45) ")
     for i in range(45):
         if int(A)==int(Numero[i]):
-            print "El numero "+Numero[i]+" ha salido "+Frecuencia[i]+" veces."
+            print "El número "+Numero[i]+" ha salido "+Frecuencia[i]+" veces."
     print "Proceso Terminado"
 else: 
-    print "ERROR: Escoja una de las dos opciones: 1, 2, 3 o 4"
+    print "ERROR: Escoja una de las opciones: 1, 2, 3 o 4"

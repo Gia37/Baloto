@@ -1,8 +1,8 @@
 #Importando la tabla desde el archivo Datos.sh
-tabla = read.table("Datos.sh")
+tabla = read.table("Frecuencia.sh")
 
 #Suma de todos los valores de V1 hasta V6
-Vec = c(tabla$V1,tabla$V2,tabla$V3,tabla$V4,tabla$V5,tabla$V6)
+Vec = c(tabla$V2)
 
 #Calcula la Media
 Media = "Media: "; Media; mean(Vec)
@@ -15,4 +15,9 @@ Mínimo ="Mínimo: "; Mínimo; min(Vec)
 
 #Calcula el maximo
 Máximo = "Máximo: "; Máximo; max(Vec)
+
+# Grafico de estadistica de numeros
+a <- read.table("Frecuencia.sh")
+a
+barplot(tabla$V2, main="Estadística de números", xlab="Balotas", col="aquamarine",breaks = 50)
 

@@ -6,6 +6,7 @@ from selenium import webdriver
 import bs4
 import time
 
+# Funcion que hace procesamiento de texto.
 def Extrae(a, N):
     Num = []
     for i in range(a,len(N),4):
@@ -38,25 +39,44 @@ for i in range(2001, A+1):
     Num1 += Extrae(4, N)
     Num2 += Extrae(5, N)
 
-# SE ESCRIBEN DATOS EN ARCHIVO EN FORMATO MARKDOWN:
+# Se escriben datos en formato en archivo Markdown:
 g = open("Datos.md","w")
-g.write("| SERIE | FECHA | SORTEO1 | SORTEO1 |\n")
+g.write("| SERIE | FECHA | SORTEO1 | SORTEO2 |\n")
 g.write("|:---:|:---:|:---:|:---:|\n")
 for i in range(len(Serie)):
     g.write("| "+Serie[i]+" | "+Fecha[i]+" | "+ Num1[i]+ " | "+Num2[i]+" |\n")
 g.close()
 
-# SE HACE PROCESAMIENTO DE TEXTO
+# Se hace procesamiento de texto:
 for i in range(len(Num1)):
     Num1[i] = Num1[i].split(' - ')
     Num2[i] = Num2[i].split(' - ')
 while ["00", "00", "00", "00", "00", "00"] in Num2:
     Num2.remove(["00", "00", "00", "00", "00", "00"])  
     
-# SE ESCRIBEN NUMEROS DE SORTEO EN ARCHIVO SH: 
+# Se escriben numeros de sorteo en archivo sh.
 f=open("Datos.sh","w")  
 for i in range(len(Num1)):
     f.write(Num1[i][0]+"\t"+Num1[i][1]+"\t"+Num1[i][2]+"\t"+Num1[i][3]+"\t"+Num1[i][4]+"\t"+Num1[i][5]+"\n")
 for i in range(len(Num2)):    
     f.write(Num2[i][0]+"\t"+Num2[i][1]+"\t"+Num2[i][2]+"\t"+Num2[i][3]+"\t"+Num2[i][4]+"\t"+Num2[i][5]+"\n")   
 f.close()
+
+# Se agrega un archivo donde se muestra la frecuencia absoluta de los numeros de los sorteos.
+h=open("Frecuencia.sh", "w")
+
+Num = []
+for i in range(len(Num1)):
+    for j in range(6):
+        Num += [Num1[i][j]]
+for i in range(len(Num2)):
+    for j in range(6):
+        Num += [Num2[i][j]]
+        
+for i in range(1, 45+1):
+    if i<10:
+        abc = Num.count("0"+str(i))
+    else:
+        abc = Num.count(str(i))
+    h.write(str(i)+"\t"+str(abc)+"\n")
+h.close()

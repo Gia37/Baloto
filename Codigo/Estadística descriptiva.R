@@ -17,7 +17,5 @@ Mínimo ="Mínimo: "; Mínimo; min(Vec)
 Máximo = "Máximo: "; Máximo; max(Vec)
 
 # Grafico de estadistica de numeros
-a <- read.table("Frecuencia.sh")
-a
-barplot(tabla$V2, main="Estadística de números", xlab="Balotas", col="aquamarine",breaks = 50)
+barplot(tabla$V2, main="Estadística de números", xlab="Balotas", col="lightblue")
 

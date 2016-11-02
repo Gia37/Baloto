@@ -29,7 +29,7 @@ El siguiente proyecto se realiza como una actividad de la clase [Herramientas Co
     + `git clone https://github.com/Gia37/Baloto.git`
 
 ## Nota 
-Para mas información sobre el uso de los códigos relevantes para la construcción del objetivo del proyecto puede visitar la [Documentación](https://github.com/Gia37/Baloto/blob/master/Documentaci%C3%B3n.ipynb).
+Para mas información sobre el uso de los códigos relevantes para la construcción del objetivo del proyecto puede visitar la [Documentación](https://github.com/Gia37/Baloto/blob/master/Codigo/Documentaci%C3%B3n.ipynb).
 
 ## Integrantes
 

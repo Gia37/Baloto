@@ -36,4 +36,10 @@ for k in range(6):
     Frecuencia[Frecuencia.index(x)]= "a"
     
 print "Frecuencia que menos se repite: ", fmer
-print "Balotas que menos se repite: ",bmes[0],"-",bmes[1],"-",bmes[2],"-",bmes[3],"-",bmes[4],"-",bmes[5]
+print "Balotas que menos se repite: ",bmes[0],"-",bmes[1],"-",bmes[2],"-",bmes[3],"-",bmes[4],"-",bmes[5], "\n"
+
+y=[]
+for i in range(len(fmar)):
+    for j in range(len(fmer)):
+        y+=[str(fmar[i])+"-"+str(fmer[j])+"="+str(int(fmar[i])-int(fmer[j]))]
+        print str(fmar[i])+"-"+str(fmer[j])+"="+str(int(fmar[i])-int(fmer[j]))

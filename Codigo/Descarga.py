@@ -55,7 +55,7 @@ while ["00", "00", "00", "00", "00", "00"] in Num2:
     Num2.remove(["00", "00", "00", "00", "00", "00"])  
     
 # Se escriben numeros de sorteo en archivo sh.
-f=open("Datos.sh","w")  
+f=open("Datos.dat","w")  
 for i in range(len(Num1)):
     f.write(Num1[i][0]+"\t"+Num1[i][1]+"\t"+Num1[i][2]+"\t"+Num1[i][3]+"\t"+Num1[i][4]+"\t"+Num1[i][5]+"\n")
 for i in range(len(Num2)):    
@@ -63,7 +63,7 @@ for i in range(len(Num2)):
 f.close()
 
 # Se agrega un archivo donde se muestra la frecuencia absoluta de los numeros de los sorteos.
-h=open("Frecuencia.sh", "w")
+h=open("Frecuencia.dat", "w")
 
 Num = []
 for i in range(len(Num1)):

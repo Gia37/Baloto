@@ -15,7 +15,7 @@ def Datos():
         Sorteo2 += [Lista[4]]
     h.close()
     
-    m = open('Frecuencia.sh', 'r')
+    m = open('Frecuencia.dat', 'r')
     lines = m.readlines()
     Numero, Frecuencia = [], []
     for i in lines:
@@ -72,7 +72,7 @@ def Consulta():
         
 
 # Funcion formato markdown        
-def F_Mark(N, R_T):
+def F_Mark():
     N, R_T = Consulta()
     Resp = ""
     if type(R_T)==list:
@@ -87,7 +87,7 @@ def F_Mark(N, R_T):
         return R_T   
         
 # Respuesta en la terminal:
-def R_Ter(N, R_T):
+def R_Ter():
     N, R_T = Consulta()
     if type(R_T)==list:
         for i in range(0, len(R_T), 2):
@@ -99,4 +99,4 @@ def R_Ter(N, R_T):
     else:
         return R_T
 
-print R_Ter(Consulta())
+print R_Ter()

@@ -41,7 +41,7 @@ for i in range(2001, A+1):
 
 # Se escriben datos en formato en archivo Markdown:
 g = open("Datos.md","w")
-g.write("| SERIE | FECHA | SORTEO1 | SORTEO2 |\n")
+g.write("| SERIE | FECHA | BALOTO | REVANCHA |\n")
 g.write("|:---:|:---:|:---:|:---:|\n")
 for i in range(len(Serie)):
     g.write("| "+Serie[i]+" | "+Fecha[i]+" | "+ Num1[i]+ " | "+Num2[i]+" |\n")

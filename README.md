@@ -13,6 +13,10 @@ El siguiente proyecto se realiza como una actividad de la clase [Herramientas Co
 ## Instalación
 
 1. Para la correcta ejecución de los archivos de este repositorio debe tener previamente instalados:
+ * **Firefox**: descargar el instalador correspondiente a su sistema operativo de la página [Instrucciones de instalación](https://support.mozilla.org/es/products/firefox/download-and-install), muchas distribuciones de Linux tienen por defecto Firefox,una vez descargado el archivo abre un Terminal y ve a tu directorio de inicio: 
+     * `cd ~`
+         * `tar xjf firefox-*.tar.bz2`, luego para iniciar Firefox, ejecuta el script firefox en la carpeta firefox: 
+         * `~/firefox/firefox`
  * **Miniconda**: descargar el instalador correspondiente (python 2 o 3, 32 o 64 bits, windows, linux o mac) de la página [Miniconda](http://conda.pydata.org/miniconda.html), y seguir las [instrucciones](http://conda.pydata.org/docs/install/quick.html) según su sistema operativo. Para el caso de linux:
      * `bash Miniconda3-latest-Linux-x86_64.sh`
  * **Python**: para la instalación de python, usando conda, se puede seguir el siguiente comando en la terminal:
@@ -24,7 +28,12 @@ El siguiente proyecto se realiza como una actividad de la clase [Herramientas Co
     + **Jupyter**: `conda install jupyter`    
     + **BeautifulSoup**: `conda install -c anaconda beautifulsoup4 requests`  
     + **Selenium**: `conda install -c conda-forge selenium`  
-    
+    + **Gnuplot**:
+        * `apt -y install gnuplot`, y para dar soporte al uso de gnuplot en el notebook:
+            * `pip install --upgrade --no-cache-dir`
+            * `git+https://github.com/has2k1/gnuplot_kernel.git@master`
+    + **Numpy**: 
+        * `conda install numpy`
 3. Clonar el repositorio:    
     + `git clone https://github.com/Gia37/Baloto.git`
 
